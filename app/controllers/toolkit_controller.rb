@@ -1,0 +1,2 @@
+class ToolkitController < ApplicationController
+end

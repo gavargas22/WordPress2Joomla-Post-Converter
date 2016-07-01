@@ -1,0 +1,16 @@
+%p#notice= notice
+%p
+	%strong Db name:
+	= @connection.db_name
+%p
+	%strong Db host:
+	= @connection.db_host
+%p
+	%strong Db username:
+	= @connection.db_username
+%p
+	%strong Db password:
+	= @connection.db_password
+= link_to 'Edit', edit_connection_path(@connection)
+|
+= link_to 'Back', connections_path

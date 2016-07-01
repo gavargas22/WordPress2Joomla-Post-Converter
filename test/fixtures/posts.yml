@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  post_date: 2015-10-14 17:54:45
+  post_date_gmt: 2015-10-14 17:54:45
+  post_content: MyText
+  post_title: MyString
+  post_excerpt: MyString
+  post_status: MyString
+  post_name: MyString
+  guid: MyString
+  post_type: MyString
+  post_mime_type: MyString
+
+two:
+  post_date: 2015-10-14 17:54:45
+  post_date_gmt: 2015-10-14 17:54:45
+  post_content: MyText
+  post_title: MyString
+  post_excerpt: MyString
+  post_status: MyString
+  post_name: MyString
+  guid: MyString
+  post_type: MyString
+  post_mime_type: MyString

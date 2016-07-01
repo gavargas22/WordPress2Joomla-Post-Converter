@@ -1,0 +1,30 @@
+%section.jumbotron.text-center
+	.container
+		%h1.jumbotron-heading WP to Joomla Conversion
+		%p.lead.text-muted Use this tool to convert content from WordPress to Joomla.
+		%p
+			%a.btn.btn-primary{:href => "#"} New Conversion
+
+
+.container
+	%p#notice= notice
+	%table
+		%thead
+			%tr
+				%th Db name
+				%th Db host
+				%th Db username
+				%th Db password
+				%th{:colspan => "3"}
+		%tbody
+			- @connections.each do |connection|
+				%tr
+					%td= connection.db_name
+					%td= connection.db_host
+					%td= connection.db_username
+					%td= connection.db_password
+					%td= link_to 'Show', connection
+					%td= link_to 'Edit', edit_connection_path(connection)
+					%td= link_to 'Destroy', connection, method: :delete, data: { confirm: 'Are you sure?' }
+	%br/
+	= link_to 'New Connection', new_connection_path
